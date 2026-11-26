@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  
+  <meta name="theme-color" content="#12123c">
+  <title>Campus · Gestão de Frequência Acadêmica</title>
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <aside class="sidebar">
+    
+    <a class="brand" href="#painel">
+      <span class="brand-icon">C</span>
+      <span>une<em>x</em><span class="brand-sub">FREQUÊNCIA ACADÊMICA</span></span>
+    </a>
+
+    <div class="workspace">
+      <span class="school-icon">▦</span>
+      <div>
+        Ambiente acadêmico
+        <small>Semestre 2026.2</small>
+      </div>
+      <span class="live-dot"></span>
+    </div>
+
+    <div class="nav-label">PRINCIPAL</div>
+    
+    <nav id="nav"></nav>
+
+    <div class="sidebar-bottom">
+      <span class="demo-dot"></span> Protótipo demonstrativo
+      <p>Dados fictícios, salvos neste navegador.</p>
+      <button id="reset" class="sidebar-link">Restaurar demonstração</button>
+    </div>
+  </aside>
+
+  <div class="shell">
+    
+    <header class="topbar">
+      <div class="breadcrumb">Unex <span>/</span> <b id="crumb">Visão geral</b></div>
+      <div class="header-right">
+        <span class="local-status"><i></i> Salvo neste navegador</span>
+        <span class="avatar">CO</span>
+        <div class="user-name">
+          Coordenação
+          <small>Ambiente de demonstração</small>
+        </div>
+      </div>
+    </header>
+
+    <main id="main"></main>
+
+    <footer>
+      Unex · Gestão de Frequência Acadêmica
+      <span>Projeto acadêmico demonstrativo · Não oficial</span>
+    </footer>
+  </div>
+
+  <dialog id="modal">
+    <form id="form">
+      <div class="modal-head">
+        <div>
+          <span class="eyebrow">CAMPUS / CADASTRO</span>
+          <h2 id="modal-title"></h2>
+        </div>
+        <button type="button" class="icon-button" id="close-modal" aria-label="Fechar">×</button>
+      </div>
+      
+      <div id="fields"></div>
+      
+      <p id="form-error" role="alert"></p>
+      <div class="modal-footer">
+        <button type="button" class="button secondary" id="cancel-modal">Cancelar</button>
+        <button class="button" type="submit">Salvar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <script src="core.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
